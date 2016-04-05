@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Youtube Videos</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+    <link rel="stylesheet" href="css/jquery.fancybox-buttons.css">
+     <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
+     <link rel="stylesheet" href="css/jquery.fancybox.css">
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>Search<span>Videos</span></h1>
+            <p>Search all Youttube videos</p>
+        </header>
+        <section>
+            <form id="search-form" name="search-form" onsubmit="return search()">
+                <div class="field-container">
+                    <input type="search" id="query" class="search-field" placeholder="search youtube">
+                    <input type="submit" name="search-btn" id="search-btn" value="">
+                </div>
+            </form>
+        </section>
+        <ul id="results"></ul>
+        <div id="buttons"></div>
+        
+        <footer>
+            <p>Copyright MP 2016</p>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.fancybox-buttons.js"></script>
+    <script src="js/jquery.fancybox-media.js"></script>
+    <script src="js/jquery.fancybox-thumbs.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".fancybox").fancybox();
+        })
+    </script>
+</body>
+
+</html>
